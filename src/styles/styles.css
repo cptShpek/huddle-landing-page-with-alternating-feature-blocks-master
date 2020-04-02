@@ -1,0 +1,366 @@
+/* main styles */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1 , h2 , h3 {
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 1em;
+
+}
+
+p {
+
+    font-size: 1.2em;
+
+}
+
+button , button:active , button:focus {
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 2em;
+    font-size: 1em;
+
+}
+
+.images {
+
+    width: 35em;
+    height: 30em;
+
+}
+
+/* generel styles */
+
+.row {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+.column {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.wrapper > div {
+
+    padding: 4em 6em;
+
+}
+
+/* top container styles */
+
+.top_container {
+
+    background: url(./images/bg-hero-desktop.svg) no-repeat;
+
+}
+
+.header {
+
+    justify-content: space-between !important;
+    margin-bottom: 2em;
+
+}
+
+.header  button {
+
+    background: #ffffff;
+    height: 4em;
+    width: 12em;
+    font-weight: bold;
+
+}
+
+.header  button:active {
+
+    background: #dfdfdf;
+
+}
+
+.top_container .content p {
+
+    margin-left: 0;
+
+}
+
+.content  button {
+
+    margin-top: 2em;
+    background: hsl(322, 100%, 66%);
+    color: #ffffff;
+    height: 4em;
+    width: 50%;
+
+}
+
+.content  button:active {
+
+    background: hsl(322, 100%, 44%);
+
+}
+
+/* middle container styles */
+
+.middle_container {
+
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+
+}
+
+.box {
+
+    box-shadow: 0.3em 0.3em 0.3em rgba(209, 206, 189, 1), -0.3em -0.3em 0.3em rgba(209, 206, 189, 1);
+    border-radius: 1em;
+    margin: 1.5em auto;
+    padding: 2em 3em;
+
+}
+
+.content > h2 , .content > p {
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.box:last-child  {
+
+    padding: 3.5em 6em;
+    align-items: center;
+    position: relative;
+    top: 7em;
+    background: #fff;
+
+}
+
+.box:last-child button {
+
+    background: hsl(322, 100%, 66%);
+    color: #ffffff;
+    height: 3em;
+    width: 60%;
+
+}
+
+.box:last-child button:active {
+
+    background: hsl(322, 100%, 36%);
+
+}
+
+/* bottom container styles */
+
+.bottom_container {
+
+    background: hsl(208, 11%, 55%);
+    padding-top: 14em !important;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 0.5em;
+
+}
+
+li{
+
+    line-height: 5;
+
+}
+
+.info {
+
+    justify-content: space-between;
+
+}
+
+.info > div {
+
+    width: 25%;
+    margin-top: 4em;
+
+}
+
+table {
+
+    border-spacing: 2em 1em;
+
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+.info > div:not(:nth-child(1)){
+
+    margin-left: 2.5em;
+
+}
+
+.info > div:nth-last-child(1) > img {
+
+    margin-left: 2em;
+
+}
+
+.copy {
+
+    align-self: flex-end;
+
+}
+
+/* footer */
+
+footer{
+
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* media styles */
+
+@media screen and (max-width: 480px) and (max-width: 780px) and (max-width: 1050px){
+
+    * {
+
+        text-align: center;
+
+    }
+
+    .box {
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .images {
+
+        width: 100%;
+        height: auto;
+
+    }
+
+    .wrapper > div {
+
+        padding: 4em 0;
+
+    }
+
+    h1 , h2 , h3 {
+
+        font-weight: bolder;
+        margin-top: 2em;
+
+    }
+
+    .header {
+
+        margin: 0;
+
+    }
+
+    .top_container{
+
+        background: url(./images/bg-hero-mobile.svg);
+
+    }
+
+    .box:nth-child(2) {
+
+        flex-direction: column !important;
+
+    }
+
+    .box:last-child {
+
+        flex-direction: column;
+        height: 13em;
+        top: 3em;
+    }
+
+    .top_content {
+
+        flex-direction: column;
+
+    }
+
+    .bottom_container {
+
+        padding: 4.5em !important;
+        justify-content: flex-start !important;
+
+    }
+
+    td p , li p , td{
+
+        text-align: left;
+
+    }
+
+   .info {
+
+        flex-direction: column;
+        align-items: inherit;
+        padding: 0;
+
+   }
+
+   li{
+
+        line-height: 2;
+
+   }
+
+   .info div {
+
+    margin: 0 auto;
+
+   }
+
+   .social {
+
+        margin: auto !important;
+
+   }
+
+   .copy {
+
+        align-self: center;
+
+    }
+
+    .info > div {
+
+        width: auto;
+
+    }
+
+}
